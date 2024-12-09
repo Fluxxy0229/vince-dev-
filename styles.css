@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: 100vh;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+#general .img-fluid {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#general .text-md-start {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #general {
+        text-align: center;
+    }
+}
+
+.custom-square {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel img {
+        height: 200px;
+    }
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.progress-bar:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: transparent;
+}
+
+/* Education Section Styling */
+#education {
+    background-color: #f4f4f4; /* Light gray background for the education section */
+    color: #333; /* Dark text color for readability */
+    padding: 60px 0;
+}
+
+#education h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+/* Card Style */
+.card {
+    border-radius: 10px; /* Rounded corners for cards */
+    border: none; /* Remove card borders for a cleaner look */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure cards stretch to full height */
+}
+
+.card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 1rem;
+    flex-grow: 1; /* Ensures content takes up remaining space */
+}
+
+.card-header h5 {
+    font-size: 1.2rem; /* Ensure header text is of consistent size */
+}
+
+/* Specific Color for Different Cards */
+.card-header.bg-primary {
+    background-color: #007bff;
+}
+
+.card-header.bg-secondary {
+    background-color: #6c757d;
+}
+
+.card-header.bg-success {
+    background-color: #28a745;
+}
+
+.card-body p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .card-body p {
+        font-size: 0.9rem;
+    }
+}
